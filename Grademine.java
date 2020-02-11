@@ -1,4 +1,3 @@
-package jdbcpack1;
 import java.sql.*;
 
 public class Grademine 
