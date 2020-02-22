@@ -1,0 +1,19 @@
+Introduction to Classes and Objects
+
+1 
+i.University- Super class/Base class/Parent Class.
+  Discrete Mathematics, Database & Information Systems, Islamic History-Sub Classes/Child Classes.
+ii.Graph Theory - attribute of Discrete Mathematics
+   ORDBMS,OLAP,Distribued Systems-attributes of Information Systems
+iii.a-object in discrete mathematics,
+    b-object in database & Information systems
+    c-object in Islamic History 
+    a,b,c,d -unique courses codes.
+iv. Professor-Class
+v.  Experience, Qualification- Attributes of professor class
+vi. lecture halls,workshops, seminar rooms- objects of university class
+vii. pre_test, mid level tests, end semester tests- Obects of University class.
+vii. calculate grade-method in university class.
+
+2 Yes, Discrete Mathematics is a Class. Since, it has several sections in it. It is a blue print of 
+  Graph theory. It is also a sub-class of the class University. It defines the behaviour and state of the objeects in it.

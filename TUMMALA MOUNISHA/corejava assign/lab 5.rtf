@@ -1,0 +1,376 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Consolas;}{\f2\fnil Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red212\green212\blue212;\red0\green200\blue125;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9                                                             \ul\fs32 lab5\par
+5.1 sol\ulnone\b\par
+\cf1\f1\fs20\lang16393 A)\f2\lang9 package\cf2\b0  com.cg.eis.bean;\cf0\par
+\cf1\b import\cf2\b0  com.cg.eis.service.empcode;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  employee \cf1\b implements\cf2\b0  empcode \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\par
+\cf2\tab String \cf3 name\cf2 ;\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 id\cf2 ;\cf0\par
+\cf2     \cf1\b double\cf2\b0  \cf3 salary\cf2 ;\cf0\par
+\cf2\tab    String \cf3 designation\cf2 ;\cf0\par
+\cf2\tab    String \cf3 insurancescheme\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  employee(String \cf4 name\cf2 , \cf1\b int\cf2\b0  \cf4 id\cf2 , \cf1\b double\cf2\b0  \cf4 salary\cf2 , String \cf4 designation\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b super\cf2\b0 ();\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 name\cf2  = \cf4 name\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 id\cf2  = \cf4 id\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 salary\cf2  = \cf4 salary\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 designation\cf2  = \cf4 designation\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getName() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 name\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setName(String \cf4 name\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 name\cf2  = \cf4 name\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getId() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 id\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setId(\cf1\b int\cf2\b0  \cf4 id\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 id\cf2  = \cf4 id\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getSalary() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 salary\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setSalary(\cf1\b double\cf2\b0  \cf4 salary\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 salary\cf2  = \cf4 salary\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  String getDesignation() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 designation\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setDesignation(String \cf4 designation\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 designation\cf2  = \cf4 designation\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  String getInsurancescheme() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 insurancescheme\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setInsurancescheme(String \cf4 insurancescheme\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 insurancescheme\cf2  = \cf4 insurancescheme\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  insurancescheme()\cf0\par
+\cf2\{\cf0\par
+\cf2         \cf1\b if\cf2\b0 ((\cf3 salary\cf2 >=5000)&&(\cf3 salary\cf2 <20000))\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 designation\cf2 =\cf5 "system associate"\cf2 ;\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 insurancescheme\cf2 =\cf5 "scheme c"\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b else\cf2\b0\tab\cf1\b if\cf2\b0 ((\cf3 salary\cf2 >=20000)&&(\cf3 salary\cf2 <40000))\cf0\par
+\cf2\tab    \{\cf0\par
+\cf2\tab\tab\cf3 designation\cf2 =\cf5 "programmer"\cf2 ;\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 insurancescheme\cf2 =\cf5 "scheme b"\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab\tab\cf1\b else\cf2\b0\tab\cf1\b if\cf2\b0 (\cf3 salary\cf2 >=40000)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 designation\cf2 =\cf5 "manager"\cf2 ;\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 insurancescheme\cf2 =\cf5 "scheme a"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf3 salary\cf2 <5000)\cf0\par
+\cf2\tab\tab\tab\cf3 designation\cf2 =\cf5 "clerk"\cf2 ;\cf0\par
+\cf2\tab      \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 insurancescheme\cf2 =\cf5 "no scheme"\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2             \}\par
+\f1\lang16393 B)\cf1\b\f2 package\cf2\b0  com.cg.eis.service;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b interface\cf2\b0  empcode \{\cf0\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  \highlight6 insurancescheme\highlight0 (); \cf0\par
+\par
+\cf2\}\cf0\par
+\f1 C)package com.cg.eis.pl;\par
+import com.cg.eis.bean.*;\par
+import java.util.Scanner;\par
+\par
+public class empservice\par
+\{\par
+\tab public static void main(String[] args)\par
+\tab\{\par
+Scanner obj = new Scanner(System.in);\par
+\tab\tab\par
+\tab\tab System.out.println("Enter the details");\par
+\tab\tab\par
+\tab\tab String name = obj.next();\par
+\tab\tab int id=obj.nextInt();\par
+\tab\tab double salary = obj.nextDouble();\par
+\tab\tab String designation = obj.next();\par
+\par
+\tab\tab System.out.println("Employee details are");\par
+\tab\tab\par
+\tab\tab System.out.println("Enter the name");\par
+\tab\tab System.out.println("Name : "+name);\par
+\tab\tab System.out.println("employee id is");\par
+\tab\tab System.out.println("id is:"+id);\par
+\tab\tab\par
+\tab\tab System.out.println("Enter salary");\par
+\tab\tab System.out.println("Salary : "+salary);\par
+\tab\tab System.out.println("Enter designation");\par
+\tab\tab System.out.println("Designation : "+designation);\par
+\tab\tab\par
+\tab\tab employee me = new employee(name,id,salary,designation);\par
+\tab\tab me.insurancescheme();\par
+\tab\tab\par
+\tab\tab obj.close();\par
+\tab\}\par
+\par
+\tab\}\par
+\b output:\par
+\cf2\b0\f2 Enter the details\cf0\par
+\cf7 mouni\cf0\par
+\cf7 9\cf0\par
+\cf7 59000\cf0\par
+\cf7 manager\cf0\par
+\cf2 Employee details are\cf0\par
+\cf2 Enter the name\cf0\par
+\cf2 Name : mouni\cf0\par
+\cf2 employee id is\cf0\par
+\cf2 id is:9\cf0\par
+\cf2 Enter salary\cf0\par
+\cf2 Salary : 59000.0\cf0\par
+\cf2 Enter designation\cf0\par
+\cf2 Designation : manager\cf0\par
+\cf2 scheme a\par
+\b\f1 5.3sol:\par
+\b0 package VJIT;\par
+import java.util.Scanner;\par
+abstract class Account \par
+\{\par
+\tab private long accnum;\par
+\tab private double balance=500;\par
+\tab private String name;\par
+\tab private float age;\par
+\par
+\tab @Override\par
+\tab public String toString() \{\par
+\tab\tab return "Account [accnum=" + accnum + ", balance=" + balance + ", name=" + name + ", age=" + age\par
+\tab\tab\tab\tab + ", getAccnum()=" + getAccnum() + ", getBalance()=" + getBalance() + ", getName()=" + getName()\par
+\tab\tab\tab\tab + ", getAge()=" + getAge() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()\par
+\tab\tab\tab\tab + ", toString()=" + super.toString() + "]";\par
+\tab\}\par
+\tab\par
+\tab public Account() \{\par
+\tab\tab\par
+\tab\par
+\tab\}\par
+\tab public Account(long accnum,String name,float age)\par
+\tab\{\par
+\tab\tab this.accnum = accnum;\par
+\tab\tab this.name = name;\par
+\tab\tab this.age = age;\par
+\tab\}\par
+\tab\par
+\tab public long getAccnum() \{\par
+\tab\tab return accnum;\par
+\tab\}\par
+\tab public void setAccnum(long accnum) \{\par
+\tab\tab this.accnum = accnum;\par
+\tab\}\par
+\tab public double getBalance() \{\par
+\tab\tab return balance;\par
+\tab\}\par
+\tab public void setBalance(double balance) \{\par
+\tab\tab this.balance = balance;\par
+\tab\}\par
+\tab public String getName() \{\par
+\tab\tab return name;\par
+\tab\}\par
+\tab public void setName(String name) \{\par
+\tab\tab this.name = name;\par
+\tab\}\par
+\tab public float getAge() \{\par
+\tab\tab return age;\par
+\tab\}\par
+\tab public void setAge(float age) \{\par
+\tab\tab this.age = age;\par
+\tab\}\par
+\tab public void deposit(double depositamount)\par
+\tab\{\par
+\tab     balance=balance+depositamount;\par
+\tab\}\par
+\tab public void withdraw(double withdrawamount) ;\tab\par
+\tab\par
+\tab public void balance() \{\par
+\tab\tab System.out.println("Available balance : ");\par
+\tab\}\par
+\}\par
+public class BankPerson extends Account\par
+\{\par
+\tab BankPerson(long accnum,String name,float age)\{\par
+\tab\tab super(accnum,name,age);\par
+       \}\par
+\tab public static void main(String[] args) \{\par
+\tab\tab\par
+\tab\tab BankPerson p = new BankPerson(2516,"Smith",21);\par
+\tab\tab p.deposit(2000);\par
+\tab\tab p.deposit(2000);\par
+\tab\tab p.getBalance();\par
+\tab\tab System.out.println("Account holder name is " + p.getName());\par
+\tab\tab System.out.println("Account number is " + p.getAccnum());\par
+\tab\tab System.out.println("Account holder name is " + p.getBalance());\par
+\tab\tab System.out.println("Account holder name is " + p.getAge());\par
+\tab\tab BankPerson p1 = new BankPerson(2517,"Kathy",25);\par
+\tab\tab p1.deposit(3000);\par
+\tab\tab p1.withdraw(2000);\par
+\tab\tab p1.getBalance();\par
+\tab\tab System.out.println("Account holder name is " + p1.getName());\par
+\tab\tab System.out.println("Account number is " + p1.getAccnum());\par
+\tab\tab System.out.println("Account holder name is " + p1.getBalance());\par
+\tab\tab System.out.println("Account holder name is " + p1.getAge());\tab\}\par
+\}\par
+package VJIT;\par
+import java.util.Scanner;\par
+abstract class Account \par
+\{\par
+\tab private long accnum;\par
+\tab private double balance=500;\par
+\tab private String name;\par
+\tab private float age;\par
+\par
+\tab @Override\par
+\tab public String toString() \{\par
+\tab\tab return "Account [accnum=" + accnum + ", balance=" + balance + ", name=" + name + ", age=" + age\par
+\tab\tab\tab\tab + ", getAccnum()=" + getAccnum() + ", getBalance()=" + getBalance() + ", getName()=" + getName()\par
+\tab\tab\tab\tab + ", getAge()=" + getAge() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()\par
+\tab\tab\tab\tab + ", toString()=" + super.toString() + "]";\par
+\tab\}\par
+\tab\par
+\tab public Account() \{\par
+\tab\tab\par
+\tab\par
+\tab\}\par
+\tab public Account(long accnum,String name,float age)\par
+\tab\{\par
+\tab\tab this.accnum = accnum;\par
+\tab\tab this.name = name;\par
+\tab\tab this.age = age;\par
+\tab\}\par
+\tab\par
+\tab public long getAccnum() \{\par
+\tab\tab return accnum;\par
+\tab\}\par
+\tab public void setAccnum(long accnum) \{\par
+\tab\tab this.accnum = accnum;\par
+\tab\}\par
+\tab public double getBalance() \{\par
+\tab\tab return balance;\par
+\tab\}\par
+\tab public void setBalance(double balance) \{\par
+\tab\tab this.balance = balance;\par
+\tab\}\par
+\tab public String getName() \{\par
+\tab\tab return name;\par
+\tab\}\par
+\tab public void setName(String name) \{\par
+\tab\tab this.name = name;\par
+\tab\}\par
+\tab public float getAge() \{\par
+\tab\tab return age;\par
+\tab\}\par
+\tab public void setAge(float age) \{\par
+\tab\tab this.age = age;\par
+\tab\}\par
+\tab public void deposit(double depositamount)\par
+\tab\{\par
+\tab     balance=balance+depositamount;\par
+\tab\}\par
+\tab public void withdraw(double withdrawamount) ;\tab\par
+\tab\par
+\tab public void balance() \{\par
+\tab\tab System.out.println("Available balance : ");\par
+\tab\}\par
+\}\par
+public class BankPerson extends Account\par
+\{\par
+\tab BankPerson(long accnum,String name,float age)\{\par
+\tab\tab super(accnum,name,age);\par
+       \}\par
+\tab public static void main(String[] args) \{\par
+\tab\tab\par
+\tab\tab BankPerson p = new BankPerson(2516,"Smith",21);\par
+\tab\tab p.deposit(2000);\par
+\tab\tab p.deposit(2000);\par
+\tab\tab p.getBalance();\par
+\tab\tab System.out.println("Account holder name is " + p.getName());\par
+\tab\tab System.out.println("Account number is " + p.getAccnum());\par
+\tab\tab System.out.println("Account holder name is " + p.getBalance());\par
+\tab\tab System.out.println("Account holder name is " + p.getAge());\par
+\tab\tab BankPerson p1 = new BankPerson(2517,"Kathy",25);\par
+\tab\tab p1.deposit(3000);\par
+\tab\tab p1.withdraw(2000);\par
+\tab\tab p1.getBalance();\par
+\tab\tab System.out.println("Account holder name is " + p1.getName());\par
+\tab\tab System.out.println("Account number is " + p1.getAccnum());\par
+\tab\tab System.out.println("Account holder name is " + p1.getBalance());\par
+\tab\tab System.out.println("Account holder name is " + p1.getAge());\par
+\}\par
+\}\par
+class SavingsAccount extends Account\{\par
+\tab final int minimumbalance=500;\par
+\tab public void withdraw(double withdraw) \{\par
+\tab     if(minimumbalance>=500)\par
+\tab     \{\par
+\tab     \tab System.out.println("You can withdraw the amount");\par
+\tab     \}\par
+\tab\}\par
+\tab\}\par
+class CurrentAccount extends Account\{\par
+\tab     boolean flag=true;\par
+\tab     int bal;\par
+\tab     public void withdraw(double withdraw) \{\par
+\tab\tab if(bal<=0) \{\par
+\tab\tab System.out.println(""+flag);\par
+\tab\tab\}\par
+\tab\tab else\par
+\tab\tab System.out.println(""+!flag);\par
+\tab\}\par
+\}\par
+public class AccountType \{\par
+\par
+\par
+\tab public static void main(String[] args) \{\par
+\tab\tab SavingsAccount s=new SavingsAccount();\par
+\tab CurrentAccount c=new CurrentAccount();\par
+\tab\tab s.withdraw(500);\par
+\tab\tab c.withdraw(0);\par
+\tab\}\par
+\tab\}\par
+\b output:\par
+\b0 You can withdraw the amount\par
+true\b\par
+\cf0\b0\f2\par
+\par
+\lang9\par
+\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\cf0\par
+\f0\fs22\par
+}
+ 
