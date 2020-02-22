@@ -1,0 +1,14 @@
+git config ----global user.name "XXXXX"
+git config ----global user.email "XXXXX@XXXX.com"
+git clone https://github.com/shraddhakulkarni/AnuragJava-Sample
+cd Anurag-Sample
+git remote
+git remote -v
+start notepad Calculator.java
+git status
+ls
+git add Calculator.java
+git status
+git commit -m "First Commit"
+git push
+
