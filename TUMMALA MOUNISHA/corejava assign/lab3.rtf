@@ -1,0 +1,209 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red63\green127\blue95;\red42\green0\blue255;\red0\green0\blue192;\red212\green212\blue212;\red240\green216\blue168;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\f0\fs22\lang9 lab 3 \par
+3.1 sol\par
+\cf1\ulnone\f1\fs20 package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  addstring \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2     \cf4 // string declaration\cf0\par
+\cf2     String \cf3 str1\cf2  = \cf5 "sravika"\cf2 ;\cf0\par
+\cf2     \cf4 // + operator used to concatenate two strings\cf0\par
+\cf2     String \cf3 str2\cf2  = \cf3 str1\cf2 +\cf3 str1\cf2 ;\cf0\par
+\cf2     \cf4 // In the below statement,'"Result string is : "+resultStr' is also a concatenation\cf0\par
+\cf2     System.\cf6\b\i out\cf2\b0\i0 .print(\cf5 "Result string is:"\cf2 +\cf3 str2\cf2 );\cf0\par
+\cf2     \{\cf0\par
+\cf2     \tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 str2\cf2 .length();\cf3 i\cf2 ++)\cf0\par
+\cf2\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf3 i\cf2  % 2!=0)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf3 str2\cf2 =\cf3 str2\cf2 .substring(0,\cf3 i\cf2 -1)+\cf5 "#"\cf2 +\cf3 str2\cf2 .substring(\cf3 i\cf2 ,\cf3 str2\cf2 .length());\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\cf2     \tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf3 str2\cf2 );\cf0\par
+\cf2     \tab\cf0\par
+\cf2     \}\cf0\par
+\cf2      \cf1\b char\cf2\b0 [] \cf3 inp\cf2 =\cf3 str1\cf2 .toCharArray();\cf0\par
+\cf2     System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "duplicate charecters are :"\cf2 );\cf0\par
+\cf2     \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 str1\cf2 .length(); \cf3 i\cf2 ++) \{\cf0\par
+\cf2     \tab\cf1\b for\cf2\b0 ( \cf1\b int\cf2\b0  \cf3 k\cf2  =\cf3 i\cf2 +1; \cf3 k\cf2 <\cf3 str1\cf2 .length();\cf3 k\cf2 ++)\cf0\par
+\cf2     \tab\{\cf0\par
+\cf2     \tab\tab\cf1\b if\cf2\b0 (\cf3 inp\cf2 [\cf3 i\cf2 ]==\cf3 inp\cf2 [\cf3 k\cf2 ])\cf0\par
+\cf2     \tab\tab\{\cf0\par
+\cf2     \tab\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf3 inp\cf2 [\cf3 i\cf2 ]);\cf0\par
+\cf2     \tab\tab\tab\cf0\par
+\cf2     \tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2     \tab\tab\}\cf0\par
+\cf2     \tab\}\cf0\par
+\cf2     \}\cf0\par
+\cf2 String \cf3 output\cf2 =\cf5 ""\cf2 ;\cf0\par
+\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 str1\cf2 .length();\cf3 i\cf2 ++)\cf0\par
+\cf2\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf3 i\cf2 %2==0)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf3 output\cf2  += \highlight7 Character\highlight0 .\i toUpperCase\i0 (\cf3 str1\cf2 .toCharArray()[\cf3 i\cf2 ]);\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf1\b else\cf0\b0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf3 output\cf2  +=\highlight7 Character\highlight0 .\i toLowerCase\i0 (\cf3 str1\cf2 .toCharArray()[\cf3 i\cf2 ]);\cf0\par
+\cf2\}\cf0\par
+\cf2\}\cf0\par
+\cf2 System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "generated one are:"\cf2 +\cf3 output\cf2 );\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\cf2\}\par
+\ul\b\f2\lang16393 output:\par
+\ulnone\b0\f1 Result string is:sravikasravika#r#v#k#s#a#i#a\cf0\par
+\cf2 duplicate charecters are :\cf0\par
+\cf2 a\cf0\par
+\cf2 generated one are:SrAvIkA\par
+\ul\b\f2 3.2 sol\par
+\cf1\ulnone\f1 package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  positivestring \{ \cf0\par
+\cf2\tab\cf1\b static\cf2\b0  \cf1\b boolean\cf2\b0  isAlphab\f2 e\f1 ticOrder(String \cf3 s\cf2 ) \{ \cf0\par
+\cf2     \cf1\b int\cf2\b0  \cf3 n\cf2  = \cf3 s\cf2 .length(); \cf0\par
+\cf2      \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 1; \cf3 i\cf2  < \cf3 n\cf2 ; \cf3 i\cf2 ++) \cf0\par
+\cf2     \{  \cf0\par
+\cf2         \cf1\b if\cf2\b0  (\cf3 s\cf2 .charAt(\cf3 i\cf2 ) < \cf3 s\cf2 .charAt(\cf3 i\cf2  +1)) \{ \cf0\par
+\cf2             \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ; \cf0\par
+\cf2         \} \cf0\par
+\cf2     \} \cf0\par
+\cf2  \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ; \cf0\par
+\cf2\}  \cf0\par
+\cf1\b static\cf2\b0  \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{ \cf0\par
+\cf2     String \cf3 s\cf2  = \cf5 "bow"\cf2 ; \cf0\par
+\cf2     \cf1\b if\cf2\b0  (\i isAlphab\f2 e\f1 ticOrder\i0 (\cf3 s\cf2 )) \{ \cf0\par
+\cf2         System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "positive number"\cf2 ); \cf0\par
+\cf2     \} \cf1\b else\cf2\b0  \{ \cf0\par
+\cf2         System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "negative number"\cf2 ); \cf0\par
+\cf2     \} \cf0\par
+\cf2\} \cf0\par
+\cf2\} \cf0\par
+\b\f2 output:\par
+\cf2\b0\f1 positive number\par
+\b\f2 3.3 sol\b0\par
+\cf1\b\f1 package\cf2\b0  vjit;\cf0\par
+\cf1\b import\cf2\b0  java.time.*;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  difdate \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab LocalDate \cf3 adate\cf2 =LocalDate.\i of\i0 (1998,01,19);\cf0\par
+\cf2\tab\tab LocalDate \cf3 now\cf2 =LocalDate.\i now\i0 ();\cf0\par
+\cf2\tab\tab Period \cf3 diff\cf2 =Period.\i between\i0 (\cf3 adate\cf2 ,\cf3 now\cf2 );\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .\highlight7 print\highlight0 f(\cf5 "\\ndifference is %d years,%d months and %d days\\n"\cf2 ,\cf3 diff\cf2 .getYears(),\cf3 diff\cf2 .getMonths(),\cf3 diff\cf2 .getDays());\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f2 output:\par
+\b0\f1\par
+\cf2 difference is 22\par
+ years,0 months and 11 days\cf0\par
+\ul\b\f2 3.4 sol\par
+\cf1\ulnone\f1 package\cf2\b0  vjit;\cf0\par
+\cf1\b import\cf2\b0  java.time.*;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  difdate \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab LocalDate \cf3 adate\cf2 =LocalDate.\i of\i0 (1998,10,26);\cf0\par
+\cf2\tab\tab LocalDate \cf3 ndate\cf2 =LocalDate.\i of\i0 (2020,01,30);\cf0\par
+\cf2\tab\tab Period \cf3 diff\cf2 =Period.\i between\i0 (\cf3 adate\cf2 ,\cf3 ndate\cf2 );\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .printf(\cf5 "\\ndifference is %d years,%d months and %d days\\n"\cf2 ,\cf3 diff\cf2 .getYears(),\cf3 diff\cf2 .getMonths(),\cf3 diff\cf2 .getDays());\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f2 output:\par
+\b0\f1\par
+\cf2 difference is 21 years,3 months and 4 days\par
+\ul\b\f2 3.5 sol\par
+\cf1\ulnone\f1 package\cf2\b0  vjit;\cf0\par
+\cf1\b import\cf2\b0  java.time.*;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  warranty \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2 LocalDate \cf3 pdate\cf2 =LocalDate.\i of\i0 (2012, 07, 19);\cf0\par
+\cf2 System.\cf6\b\i out\cf2\b0\i0 .printf(\cf5 "purchase date %d-%s\\n"\cf2 ,\cf3 pdate\cf2 .getYear(),\cf3 pdate\cf2 .getMonth());\cf0\par
+\cf2 LocalDate \cf3 wdate\cf2 =LocalDate.\i of\i0 (2020,02,19);\cf0\par
+\cf2 System.\cf6\b\i out\cf2\b0\i0 .printf(\cf5 "warranty date %d-%s\\n"\cf2 ,\cf3 wdate\cf2 .getYear(),\cf3 wdate\cf2 .getMonth());\cf0\par
+\cf2 Period \cf3 diff\cf2 =Period.\i between\i0 (\cf3 pdate\cf2 , \cf3 wdate\cf2 );\cf0\par
+\cf2 System.\cf6\b\i out\cf2\b0\i0 .printf(\cf5 "warranty period is %d years,%dmonths"\cf2 , \cf3 diff\cf2 .getYears(),\cf3 diff\cf2 .getMonths())\cf0\par
+\cf2 ;\cf0\par
+\cf2\ul\}\cf0\ulnone\par
+\cf2\}\par
+\b\f2 output:\cf0\b0\f1\par
+\cf2\ul purchase\ulnone  \cf6 date\cf2  2012-\ul JULY\cf0\ulnone\par
+\cf6\ul warranty\cf2\ulnone  date 2020-FEBRUARY\cf0\par
+\cf2\ul warranty\ulnone  \ul period\ulnone  \cf6 is\cf2  7 years,7months\par
+\ul\b\f2 3.6 sol\par
+\cf1\ulnone\f1 package\cf2\b0  vjit;\cf0\par
+\cf1\b import\cf2\b0  java.time.*;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  zonedate \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab     ZoneId \cf3 zone1\cf2  = ZoneId.\i of\i0 (\cf5 "Europe/London"\cf2 );\cf0\par
+\par
+\cf2\tab     LocalTime \cf3 now1\cf2  = LocalTime.\i now\i0 (\cf3 zone1\cf2 );\cf0\par
+\f2            \cf2\f1 LocalDate \cf3 now\cf2 = LocalDate.\i now\i0 (\cf3 zone1\cf2 );\cf0\par
+\cf2\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf3 now1\cf2 );\cf0\par
+\cf2\f2            \f1 System.\cf6\b\i out\cf2\b0\i0 .println(\cf3 now\cf2 );\cf0\par
+\cf2\tab     \cf0\par
+\par
+\cf2\tab   \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\b\f2 output:\par
+\cf2\b0\f1 17:34:36.797\par
+2020-01-31\cf0\par
+\ul\b\f2 3.7 sol\par
+\cf1\ulnone\f1 package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.time.LocalDate;\cf0\par
+\cf1\b import\cf2\b0  java.time.Period;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  calculateage \{\cf0\par
+\cf2 String \cf6 firstname\cf2 ;\cf0\par
+\cf2 String \cf6 lastname\cf2 ;\cf0\par
+\cf1\b char\cf2\b0  \cf6 gender\cf2 ;\cf0\par
+\cf1\b long\cf2\b0  \cf6 phoNo\cf2 ;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\{\cf0\par
+\cf2\tab LocalDate \cf3 adate\cf2 =LocalDate.\i of\i0 (1998,10,26);\cf0\par
+\cf2\tab LocalDate \cf3 now\cf2 =LocalDate.\i now\i0 ();\cf0\par
+\cf2\tab Period \cf3 diff\cf2 =Period.\i between\i0 (\cf3 adate\cf2 ,\cf3 now\cf2 );\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .printf(\cf5 "\\ndifference is %d years,%d months and %d days\\n"\cf2 ,\cf3 diff\cf2 .getYears(),\cf3 diff\cf2 .getMonths(),\cf3 diff\cf2 .getDays());\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab person \cf3 p1\cf2 =\cf1\b new\cf2\b0  person();\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "person details"\cf2 );\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "full name :"\cf2 +\cf3 p1\cf2 .getFirstName()+\cf3 p1\cf2 .getLastName());\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "gender:"\cf2 +\cf3 p1\cf2 .getGender());\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "phoNo:"\cf2 +\cf3 p1\cf2 .getPhoNo());\cf0\par
+\cf2\tab person \cf3\highlight8 p2\cf2\highlight0 =\cf1\b new\cf2\b0  person(\cf5 "sridithya"\cf2 ,\cf5 "thummala"\cf2 ,\cf5 'f'\cf2 ,987654321);\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "firstName: "\cf2 +\cf3\highlight7 p2\cf2\highlight0 .getFirstName());\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "lastName:"\cf2 +\cf3\highlight7 p2\cf2\highlight0 .getLastName());\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "gender:"\cf2 +\cf3\highlight7 p2\cf2\highlight0 .getGender());\cf0\par
+\cf2\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf5 "phoNo:"\cf2 +\cf3\highlight7 p2\cf2\highlight0 .getPhoNo());\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\cf2\}\cf0\par
+\b\f2 output:\par
+\b0\f1\par
+\cf2 difference is 21 years,3 months and 4 days\cf0\par
+\cf2 person details\cf0\par
+\cf2 full name :mounishatummala\cf0\par
+\cf2 gender:f\cf0\par
+\cf2 phoNo:987654321\cf0\par
+\cf2 firstName: sridithya\cf0\par
+\cf2 lastName:thummala\cf0\par
+\cf2 gender:f\cf0\par
+\cf2 phoNo:987654321\cf0\par
+\par
+\par
+\f2\lang9\par
+\par
+\f0\fs22\par
+}
+ 

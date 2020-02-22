@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern\fprq1\fcharset0 Consolas;}{\f2\fswiss\fprq2\fcharset0 Calibri;}{\f3\fnil Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red42\green0\blue255;\red106\green62\blue62;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+
+\pard\sa200\sl276\slmult1\qc\ul\b   core java lab2\par
+
+\pard\widctlpar\cf1\ulnone\f1\fs20\lang16393\par
+2.1 solution\par
+\par
+\par
+package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  persondetailsjava \{ \cf0\par
+\cf2\tab String \cf3 firstName\cf2 ;\cf0\par
+\cf2\tab String \cf3 lastName\cf2 ;\cf0\par
+\cf2\tab\cf1\b char\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\cf1\b short\cf2\b0  \cf3 age\cf2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 Weight\cf2 ;\cf0\par
+\cf2\tab persondetailsjava()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf3 firstName\cf2  =\cf4 "divya"\cf2 ;\cf0\par
+\cf2\tab     \cf3 lastName\cf2  =\cf4 "bharathi"\cf2 ;\cf0\par
+\cf2\tab     \cf3 gender\cf2  =\cf4 'F'\cf2 ;\cf0\par
+\cf2\tab     \cf3 age\cf2  =20;\cf0\par
+\cf2\tab     \cf3 Weight\cf2  =85.55;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab persondetailsjava \cf5 pd\cf2 =\cf1\b new\cf2\b0  persondetailsjava();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "persondetails"\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName:"\cf2 +\cf5 pd\cf2 .\cf3 firstName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2 +\cf5 pd\cf2 .\cf3 lastName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 pd\cf2 .\cf3 gender\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "age:"\cf2 +\cf5 pd\cf2 .\cf3 age\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "weight:"\cf2 +\cf5 pd\cf2 .\cf3 Weight\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+
+\pard\widctlpar\sa160\sl252\slmult1\f2\fs22 Output:\par
+
+\pard\widctlpar\cf2\f1\fs20 persondetails\cf0\par
+\cf2 firstName:divya\cf0\par
+\cf2 lastname:bharathi\cf0\par
+\cf2 gender:F\cf0\par
+\cf2 age:20\cf0\par
+\cf2 weight:85.55\par
+\b 2.2 solution\par
+\b0\par
+\cf1\b package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  checknumber \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf5 a\cf2  =Integer.\i parseInt\i0 (\cf5 args\cf2 [0]);\cf0\par
+\cf1\b if\cf2\b0 (\cf5 a\cf2 >=0)\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "positive number"\cf2 );\cf0\par
+\cf1\b else\cf0\b0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "negative number"\cf2 );\cf0\par
+\cf2\}\cf0\par
+\cf2\}\par
+\b Output:\par
+\b0 Positive number\par
+\ul\b\par
+3\super rd\nosupersub  solution\cf0\par
+\cf1\ulnone package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  person \{\cf0\par
+\cf2 String \cf3 firstName\cf2 ;\cf0\par
+\cf1\b public\cf2\b0  String getFirstName() \{\cf0\par
+\cf2\tab\cf1\b return\cf2\b0  \cf3 firstName\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setFirstName(String \cf5 firstName\cf2 ) \{\cf0\par
+\cf2\tab\cf1\b this\cf2\b0 .\cf3 firstName\cf2  = \cf5 firstName\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  String getLastName() \{\cf0\par
+\cf2\tab\cf1\b return\cf2\b0  \cf3 lastName\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setLastName(String \cf5 lastName\cf2 ) \{\cf0\par
+\cf2\tab\cf1\b this\cf2\b0 .\cf3 lastName\cf2  = \cf5 lastName\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b char\cf2\b0  getGender() \{\cf0\par
+\cf2\tab\cf1\b return\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setGender(\cf1\b char\cf2\b0  \cf5 gender\cf2 ) \{\cf0\par
+\cf2\tab\cf1\b this\cf2\b0 .\cf3 gender\cf2  = \cf5 gender\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf2 String \cf3 lastName\cf2 ;\cf0\par
+\cf1\b char\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2 person()\cf0\par
+\cf2\{\cf0\par
+\cf2\tab\cf3 firstName\cf2 =\cf4 "mounisha"\cf2 ;\cf0\par
+\cf2     \cf3 lastName\cf2 =\cf4 "tummala"\cf2 ;\cf0\par
+\cf2     \cf3 gender\cf2 =\cf4 'f'\cf2 ;\cf0\par
+\cf2     \cf0\par
+\cf2     \cf0\par
+\cf2\}\cf0\par
+\cf2 person( String \cf5 firstName\cf2 ,String \cf5 lastName\cf2 , \cf1\b char\cf2\b0  \cf5 gender\cf2 )\cf0\par
+\cf2\{\cf0\par
+\cf2\tab\cf1\b this\cf2\b0 .\cf3 firstName\cf2 =\cf5 firstName\cf2 ;\cf0\par
+\cf2\tab\cf1\b this\cf2\b0 .\cf3 lastName\cf2 =\cf5 lastName\cf2 ;\cf0\par
+\cf2\tab\cf1\b this\cf2\b0 .\cf3 gender\cf2 =\cf5 gender\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf2\}\par
+\cf1\b package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  personmain \{\cf0\par
+\cf2 String \cf3 firstname\cf2 ;\cf0\par
+\cf2 String \cf3 lastname\cf2 ;\cf0\par
+\cf1\b char\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\{\cf0\par
+\cf2\tab person \cf5 p1\cf2 =\cf1\b new\cf2\b0  person();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "person details"\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName :"\cf2 +\cf5 p1\cf2 .getFirstName());\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastName :"\cf2 +\cf5 p1\cf2 .getLastName());\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p1\cf2 .\highlight6 getGender\highlight0 ());\cf0\par
+\cf2\tab person \cf5 p2\cf2 =\cf1\b new\cf2\b0  person(\cf4 "sridithya"\cf2 ,\cf4 "thummala"\cf2 ,\cf4 'f'\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName: "\cf2 +\cf5 p2\cf2 .getFirstName());\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastName:"\cf2 +\cf5 p2\cf2 .getLastName());\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p2\cf2 .\highlight6 getGender\highlight0 ());\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\cf2\}\cf0\par
+\b Output:\par
+\cf2\b0 person details\cf0\par
+\cf2 firstName :mounisha\cf0\par
+\cf2 lastName :tummala\cf0\par
+\cf2 gender:f\cf0\par
+\cf2 firstName: sridithya\cf0\par
+\cf2 lastName:thummala\cf0\par
+\cf2 gender:f\par
+\ul\b 2.4 solution\par
+
+\pard\cf1\ulnone\f3 package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  phonenumber \{ \cf0\par
+\cf2\tab String \cf3 firstName\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getFirstName() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 firstName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setFirstName(String \cf5 firstName\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 firstName\cf2  = \cf5 firstName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getLastName() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 lastName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setLastName(String \cf5 lastName\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 lastName\cf2  = \cf5 lastName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b char\cf2\b0  getGender() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setGender(\cf1\b char\cf2\b0  \cf5 gender\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 gender\cf2  = \cf5 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b long\cf2\b0  getPhoNo() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 phoNo\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setPhoNO(\cf1\b long\cf2\b0  \cf5 phoNO\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 phoNo\cf2  = \cf5 phoNO\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab String \cf3 lastName\cf2 ;\cf0\par
+\cf2\tab\cf1\b char\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\cf1\b long\cf2\b0  \cf3 phoNo\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab person \cf5 p1\cf2 =\cf1\b new\cf2\b0  person();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "person details"\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName :"\cf2 +\cf5 p1\cf2 .getFirstName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastName :"\cf2 +\cf5 p1\cf2 .getLastName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p1\cf2 .getGender());\cf0\par
+\cf2\tab     System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "phoNO:"\cf2 +\cf5 p1\cf2 .getPhoNo());\cf0\par
+\cf2\tab\tab person \cf5 p2\cf2 =\cf1\b new\cf2\b0  person(\cf4 "sridithya"\cf2 ,\cf4 "thummala"\cf2 ,\cf4 'f'\cf2 ,987654321);\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName: "\cf2 +\cf5 p2\cf2 .getFirstName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastName:"\cf2 +\cf5 p2\cf2 .getLastName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p2\cf2 .getGender());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "phoNo:"\cf2 +\cf5 p2\cf2 .getPhoNo());\cf0\par
+\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+
+\pard\widctlpar\b\f1 output:\par
+
+\pard\cf2\b0\f3 person details\cf0\par
+\cf2 firstName :mounisha\cf0\par
+\cf2 lastName :tummala\cf0\par
+\cf2 gender:f\cf0\par
+\cf2 phoNO:987654321\cf0\par
+\cf2 firstName: sridithya\cf0\par
+\cf2 lastName:thummala\cf0\par
+\cf2 gender:f\cf0\par
+\cf2 phoNo:987654321\cf0\par
+
+\pard\widctlpar\ul\b\f1 2,5 sol\par
+
+\pard\cf1\ulnone\f3 package\cf2\b0  vjit;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  phonenumber \{ \cf0\par
+\cf2\tab String \cf3 firstName\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getFirstName() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 firstName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setFirstName(String \cf5 firstName\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 firstName\cf2  = \cf5 firstName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getLastName() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 lastName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setLastName(String \cf5 lastName\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 lastName\cf2  = \cf5 lastName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b char\cf2\b0  getGender() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setGender(\cf1\b char\cf2\b0  \cf5 gender\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 gender\cf2  = \cf5 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b long\cf2\b0  getPhoNo() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 phoNo\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setPhoNO(\cf1\b long\cf2\b0  \cf5 phoNO\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 phoNo\cf2  = \cf5 phoNO\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab String \cf3 lastName\cf2 ;\cf0\par
+\cf2\tab\cf1\b char\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\cf1\b long\cf2\b0  \cf3 phoNo\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab person \cf5 p1\cf2 =\cf1\b new\cf2\b0  person();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "person details"\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName :"\cf2 +\cf5 p1\cf2 .getFirstName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastName :"\cf2 +\cf5 p1\cf2 .getLastName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p1\cf2 .getGender());\cf0\par
+\cf2\tab      System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "phoNO:"\cf2 +\cf5 p1\cf2 .getPhoNo());\cf0\par
+\cf2\tab\tab person \cf5 p2\cf2 =\cf1\b new\cf2\b0  person(\cf4 "sridithya"\cf2 ,\cf4 "thummala"\cf2 ,\cf4 's'\cf2 ,987654321);\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstName: "\cf2 +\cf5 p2\cf2 .getFirstName());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastName:"\cf2 +\cf5 p2\cf2 .getLastName());\cf0\par
+\cf2\tab\tab Character \cf5 c\cf2 =\cf5 p2\cf2 .getGender();\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf5 c\cf2 .equals(\cf4 'm'\cf2 )||\cf5 c\cf2 .equals(\cf4 'f'\cf2 ))\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 c\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 " invalid gender:"\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "phoNo:"\cf2 +\cf5 p2\cf2 .getPhoNo());\cf0\par
+\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+
+\pard\widctlpar\f1 output:\par
+
+\pard\cf2\f3 person details\cf0\par
+\cf2 firstName :mounisha\cf0\par
+\cf2 lastName :tummala\cf0\par
+\cf2 gender:f\cf0\par
+\cf2 phoNO:987654321\cf0\par
+\cf2 firstName: sridithya\cf0\par
+\cf2 lastName:thummala\cf0\par
+\cf2  invalid gender:\cf0\par
+\cf2 phoNo:987654321\cf0\par
+
+\pard\widctlpar\f1\par
+\b\par
+
+\pard\widctlpar\sa160\sl252\slmult1\b0\f2\fs22\par
+
+\pard\sa200\sl276\slmult1\f0\lang9\par
+}
+ 
